@@ -35,7 +35,7 @@ test_data <- cbind(as.data.table(subject_test), y_test, X_test)
 # Load and process X_train & y_train data.
 X_train <- read.table("./UCI HAR Dataset/train/X_train.txt")
 y_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
-subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
+subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt" ,row.names = FALSE)
 
 names(X_train) = features
 
